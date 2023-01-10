@@ -8,15 +8,17 @@
   {% for expertise in data.expertises.content %}
   <div class="tech">
     <h2>{{ expertise.title }}</h2>
-    {% if expertise.icon.first %}
-    <i class="{{ expertise.icon.first }}"></i>
-    {% endif %}
-    {% if expertise.icon.second %}
-    <i class="{{ expertise.icon.second }}"></i>
-    {% endif %}
-    {% if expertise.icon.third %}
-    <i class="{{ expertise.icon.third }}"></i>
-    {% endif %}
+    <div style="height: 38%;">
+      {% if expertise.icon.first %}
+      <i class="{{ expertise.icon.first }}"></i>
+      {% endif %}
+      {% if expertise.icon.second %}
+      <i class="{{ expertise.icon.second }}"></i>
+      {% endif %}
+      {% if expertise.icon.third %}
+      <i class="{{ expertise.icon.third }}"></i>
+      {% endif %}
+    </div>
     <p>{{ expertise.description }}</p>
   </div>
   {% endfor %}

@@ -1,0 +1,32 @@
+{% assign data = site.data.data %}
+<div class="user-details">
+  <h1>{{ data.project.title }}</h1>
+</div>
+{% for post in site.posts %}
+<div class="user-projects">
+  {% assign mod = forloop.index | modulo: 2 %}
+  {% if mod == 0 %}
+  <div class="images-right">
+    <img alt="{{ post.title }}" src="{{ post.image | relative_url }}" />
+  </div>
+  <div class="contents">
+    <h3>{{ post.title }}</h3>
+    {{ post.excerpt }}
+    {% if post.link %}
+    <a class="project-link" target="_blank" href="{{ post.link }}">Cek disini!</a>
+    {% endif %}
+  </div>
+  {% else %}
+  <div class="images-left">
+    <img alt="{{ post.title }}" src="{{ post.image | relative_url }}" />
+  </div>
+  <div class="contents-right">
+    <h3>{{ post.title }}</h3>
+    {{ post.excerpt }}
+    {% if post.link %}
+    <a class="project-link" target="_blank" href="{{ post.link }}">Cek disini!</a>
+    {% endif %}
+  </div>
+  {% endif %}
+</div>
+{% endfor %}

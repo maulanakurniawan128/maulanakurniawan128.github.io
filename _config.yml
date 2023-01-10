@@ -1,0 +1,27 @@
+# Site settings
+title: Portofolio
+description: Halaman portofolio tentang Maulana Kurniawan
+# baseurl: "/particle" # the subpath of your site, e.g. /blog
+url: https://maulanakurniawan128.github.io # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+
+# User settings
+user_name: Maulana Kurniawan
+user_title: Junior Web Programmer
+email: maulanakurniawan128@outlook.com
+github: maulanakurniawan128
+gitlab: maulanakurniawan128
+facebook: maulanakurniawan128
+instagram: maulanakurniawan128
+telegram: maulanakurniawan128
+tiktok:
+linkedin:
+twitter:
+
+# Google-analytics
+google-analytics:
+  id: ""
+
+plugins:
+  - jekyll-seo-tag
+
+exclude: ["LICENSE", "README.md", "package.json", "src", "node_modules"]

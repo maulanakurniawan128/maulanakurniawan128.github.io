@@ -1,0 +1,51 @@
+{% assign data = site.data.data %}
+<div id="particles-js">
+  <div class="header">
+    <h1>
+      <span class="site-title">{{ site.user_name }}</span>
+      <span class="site-description">{{ site.user_title }}</span>
+    </h1>
+    <div class="header-icons">
+      {% if site.email %}
+      <a aria-label="Kirim email" href="mailto:{{ site.email }}"><i class="icon fa fa-envelope"></i></a>
+      {% endif %}
+      {% if site.github %}
+      <a aria-label="GitHub Saya" target="_blank" href="https://github.com/{{ site.github }}"><i
+           class="icon fab fa-github-alt" aria-hidden="true"></i></a>
+      {% endif %}
+      {% if site.gitlab %}
+      <a aria-label="GitLab Saya" target="_blank" href="https://gitlab.com/{{ site.gitlab }}"><i
+           class="icon fab fa-gitlab" aria-hidden="true"></i></a>
+      {% endif %}
+      {% if site.facebook %}
+      <a aria-label="Facebook Saya" target="_blank" href="https://facebook.com/{{ site.facebook }}"><i
+           class="icon fab fa-facebook-f" aria-hidden="true"></i></a>
+      {% endif %}
+      {% if site.instagram %}
+      <a aria-label="Instagram Saya" target="_blank" href="https://instagram.com/{{ site.instagram }}"><i
+           class="icon fab fa-instagram" aria-hidden="true"></i></a>
+      {% endif %}
+      {% if site.telegram %}
+      <a aria-label="Telegram Saya" target="_blank" href="https://t.me/{{ site.telegram }}"><i
+           class="icon fab fa-telegram" aria-hidden="true"></i></a>
+      {% endif %}
+      {% if site.tiktok %}
+      <a aria-label="TikTok Saya" target="_blank" href="https://tiktok.com/@{{ site.tiktok }}"><i
+           class="icon fab fa-tiktok" aria-hidden="true"></i></a>
+      {% endif %}
+      {% if site.linkedin %}
+      <a aria-label="LinkedIn Saya" target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin }}"><i
+           class="icon fab fa-linkedin-in" aria-hidden="true"></i></a>
+      {% endif %}
+      {% if site.twitter %}
+      <a aria-label="Twitter Saya" target="_blank" href="https://twitter.com/{{ site.twitter }}"><i
+           class="icon fab fa-twitter" aria-hidden="true"></i></a>
+      {% endif %}
+    </div>
+    <div class="header-links">
+      <a class="link" href="#about" data-scroll>{{ data.about }}</a>
+      <a class="link" href="#projects" data-scroll>{{ data.project }}</a>
+    </div>
+  </div>
+  <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+</div>

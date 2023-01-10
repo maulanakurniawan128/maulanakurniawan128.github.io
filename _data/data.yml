@@ -1,0 +1,30 @@
+# This data will displayed after the first page
+about: Tentang
+project: Proyek
+expertises:
+  title: Keahlian
+  description: "Berikut ini bidang yang saya kuasai:"
+  content:
+    - title: Web Dasar
+      icon:
+        first: devicon-html5-plain-wordmark colored
+        second: devicon-css3-plain-wordmark colored
+        third: devicon-javascript-plain colored
+      description: |
+        Memahami komponen dasar pembuatan sebuah website
+        menggunakan HTML, CSS dan JavaScript + jQuery.
+    - title: PHP
+      icon:
+        first: devicon-php-plain colored
+        second: devicon-codeigniter-plain-wordmark colored
+        third:
+      description: |
+        Saya juga sedikit menguasai PHP beserta <i>framework</i> CodeIgniter 3.
+    - title: Peralatan
+      icon:
+        first: devicon-git-plain-wordmark colored
+        second: devicon-bash-plain colored
+        third: devicon-ubuntu-plain-wordmark colored
+      description: |
+        Dapat menggunakan <i>tools</i> seperti Git, PowerShell, Bash, dan juga sedikit
+        memahami Linux distro yang berbasiskan Ubuntu.

@@ -1,0 +1,24 @@
+{% assign data = site.data.data %}
+{% if data.expertises.title %}
+<div class="user-details">
+  <h1>{{ data.expertises.title }}</h1>
+  <p>{{ data.expertises.description }}</p>
+</div>
+<div class="user">
+  {% for expertise in data.expertises.content %}
+  <div class="tech">
+    <h2>{{ expertise.title }}</h2>
+    {% if expertise.icon.first %}
+    <i class="{{ expertise.icon.first }}"></i>
+    {% endif %}
+    {% if expertise.icon.second %}
+    <i class="{{ expertise.icon.second }}"></i>
+    {% endif %}
+    {% if expertise.icon.third %}
+    <i class="{{ expertise.icon.third }}"></i>
+    {% endif %}
+    <p>{{ expertise.description }}</p>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}

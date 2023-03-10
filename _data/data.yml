@@ -17,14 +17,15 @@ expertises:
       icon:
         first: devicon-php-plain colored
         second: devicon-codeigniter-plain-wordmark colored
-        third:
+        third: devicon-laravel-plain-wordmark colored
       description: |
-        Saya juga sedikit menguasai PHP beserta <i>framework</i> CodeIgniter 3.
+        Saya juga sedikit menguasai PHP beserta <i>framework</i> CodeIgniter 3. Dan saat ini
+        sedang mempelajari <i>framework</i> Laravel 9.
     - title: Peralatan
       icon:
         first: devicon-git-plain-wordmark colored
         second: devicon-bash-plain colored
-        third: devicon-ubuntu-plain-wordmark colored
+        third: devicon-linux-plain colored
       description: |
         Dapat menggunakan <i>tools</i> seperti Git, PowerShell, Bash, dan juga sedikit
-        memahami Linux distro yang berbasiskan Ubuntu.
+        memahami Linux distro yang berbasis Ubuntu. Dan saat ini sedang mempelajari Linux distro berbasis RHEL.
